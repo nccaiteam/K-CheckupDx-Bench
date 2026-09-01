@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1353011777.svg)](https://doi.org/10.5281/zenodo.22218041)
+
 # K-CheckupDx-Bench
 
 A benchmark for **tiered determination** in the Korean National Health Screening Program
