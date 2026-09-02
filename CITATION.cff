@@ -2,17 +2,19 @@ cff-version: 1.2.0
 title: "K-CheckupDx-Bench: a benchmark for tiered determination in the Korean National Health Screening Program"
 message: "If you use this benchmark, please cite it as below."
 type: dataset
-version: "1.0"
-date-released: "2026-08-26"
+version: "1.1"
+date-released: "2026-09-01"
 license: CC-BY-4.0
 license-url: "https://creativecommons.org/licenses/by/4.0/"
-repository-code: "https://github.com/<OWNER>/K-CheckupDx-Bench"
+repository-code: "https://github.com/nccaiteam/K-CheckupDx-Bench"
+doi: "10.5281/zenodo.22218041"
 abstract: >-
   Evaluation data and tooling for tiered determination (Normal A / Normal B / suspected disease)
   in the Korean National Health Screening Program, derived entirely from published criteria.
   Includes a 144-case tier set, a 528-case / 6,321-pair value-ladder set for the label-independent
-  monotonicity violation metric, a 54-case BMI source-ambiguity set, a deterministic rule engine
-  that re-derives every gold label, and a documented confound audit trail.
+  monotonicity violation metric, a 54-case BMI source-ambiguity set, the intermediate ladder
+  versions v1.1 and v1.2 retained for the confound audit trail, a deterministic rule engine
+  that re-derives every gold label, and the complete result files for all reported runs.
 keywords:
   - health screening
   - large language models
@@ -21,4 +23,12 @@ keywords:
   - monotonicity
   - Korean
 authors:
-  - name: "<AUTHOR>"
+  - family-names: "Park"
+    given-names: "Hyunwoo"
+    affiliation: "National Cancer Center, Goyang-si, Republic of Korea"
+  - family-names: "Hwangbo"
+    given-names: "Yul"
+    affiliation: "National Cancer Center, Goyang-si, Republic of Korea"
+  - family-names: "Lee"
+    given-names: "Jaedong"
+    affiliation: "National Cancer Center, Goyang-si, Republic of Korea"
