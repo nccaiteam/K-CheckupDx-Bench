@@ -1,5 +1,3 @@
-[![DOI](https://zenodo.org/badge/1353011777.svg)](https://doi.org/10.5281/zenodo.22218041)
-
 # K-CheckupDx-Bench
 
 A benchmark for **tiered determination** in the Korean National Health Screening Program
@@ -49,7 +47,9 @@ src/      run_pilot.py             runner (anthropic / openai / mock rule engine
           score_bootstrap.py       cluster (by-ladder) bootstrap for between-model differences
           score_mcnemar.py         exact McNemar for the grounding effect (majority-vote based)
           prompts.md               prompt definitions and design rationale
-results/  result files from all reported runs, including development-phase runs (v1.1, v1.2), the v1.0 pilot, and the replication runs
+results/  result files from all reported runs (166 files): ladder v1.3 zero-shot 10 runs and rule-grounded 10 runs per model,
+          tier v1.0 paired analysis 10 runs per condition per model, the BMI 3-condition subset, development-phase runs
+          (v1.1, v1.2), the v1.0 pilot, the Claude replication runs, and rule-engine controls
 figures/  pipeline and results figures
 ```
 
@@ -119,17 +119,23 @@ during development.
 
 ## Citation
 
-⟦TBC: repository DOI (Zenodo) and the accompanying article, once available.⟧
+Archived on Zenodo. Cite the concept DOI to refer to all versions:
+**[10.5281/zenodo.22218041](https://doi.org/10.5281/zenodo.22218041)**.
 
 ```bibtex
 @misc{kcheckupdx_bench,
+  author = {Park, Hyunwoo and Hwangbo, Yul and Lee, Jaedong},
   title  = {K-CheckupDx-Bench: a benchmark for tiered determination in the
             Korean National Health Screening Program},
   year   = {2026},
-  url    = {https://github.com/<OWNER>/K-CheckupDx-Bench},
-  note   = {Version 1.0}
+  doi    = {10.5281/zenodo.22218041},
+  url    = {https://github.com/nccaiteam/K-CheckupDx-Bench},
+  note   = {Version 1.1}
 }
 ```
+
+The accompanying article is under review; this section will be updated with its citation once
+it is available.
 
 ## Licensing
 
